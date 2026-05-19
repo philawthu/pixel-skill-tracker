@@ -1,0 +1,44 @@
+{
+  "name": "skill-tracker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development vite --host",
+    "build": "tsc && vite build",
+    "build:prod": "tsc --project tsconfig.build.json && vite build",
+    "preview": "vite preview",
+    "publish": "node scripts/publish.js",
+    "db:init": "tsx scripts/init-db.ts"
+  },
+  "dependencies": {
+    "@octopus-sdk/browser-rum": "latest",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tailwindcss/vite": "^4.1.18",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "lucide-react": "^0.548.0",
+    "pg": "^8.21.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwind-merge": "^3.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19.2.3",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "tailwindcss": "^4.1.18",
+    "tsx": "^4.22.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.52.4",
+    "@rollup/rollup-darwin-x64": "^4.52.4",
+    "@rollup/rollup-linux-x64-gnu": "^4.52.4"
+  }
+}

@@ -1,0 +1,18 @@
+[build]
+  publish = "dist"
+  command = "pnpm run build"
+
+[functions]
+  directory = "netlify/functions"
+
+# Redirect /api/sync* to the Netlify Function
+[[redirects]]
+  from = "/api/sync*"
+  to = "/.netlify/functions/api-sync"
+  status = 200
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

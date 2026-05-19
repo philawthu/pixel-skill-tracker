@@ -1,6 +1,9 @@
 [build]
   publish = "dist"
-  command = "pnpm run build"
+  command = "pnpm run build:prod"
+
+[build.environment]
+  NODE_VERSION = "18"
 
 [functions]
   directory = "netlify/functions"

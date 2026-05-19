@@ -12,6 +12,7 @@
     "db:init": "tsx scripts/init-db.ts"
   },
   "dependencies": {
+    "@netlify/functions": "^5.2.2",
     "@octopus-sdk/browser-rum": "latest",
     "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",

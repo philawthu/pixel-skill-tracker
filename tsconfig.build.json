@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    /* 为生产构建放宽限制 */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    /* 保留核心类型安全 */
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "src/vite-env.d.ts"
+  ]
+}
